@@ -1,0 +1,15 @@
+상품 목록
+
+CREATE TABLE product_list(
+    product_no char(13),
+    product_name varchar2(60) not null,
+    product_price int default 0,
+    product_desc varchar2(1000),
+    product_cnt int default 0,
+    product_sale int default 0,
+    genre_no varchar2(30),
+
+    CONSTRAINT product_list_pk PRIMARY KEY(product_no),
+    CONSTRAINT product_list_genre_no_fk FOREIGN KEY(genre_no) REFERENCES genre_list(genre_no)
+);
+
