@@ -1,0 +1,11 @@
+
+create table customer_info (
+    user_email varchar2(50) Primary Key,
+    user_pass varchar2(50),
+    user_name varchar2(50),
+    user_Addr varchar2(200),
+    gender char(1),
+    user_Birth date,
+    user_Tel VARCHAR2(13),
+    blackList char(1)
+);
