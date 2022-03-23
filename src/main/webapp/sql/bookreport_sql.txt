@@ -1,0 +1,16 @@
+CREATE TABLE bookreport (
+	bookreport_no		INT,
+	user_email		varchar2(50),
+	product_no		char(13),
+	write_date		date,
+	bookreport_title		varchar2(80),
+	bookreport_content	varchar2(10000),
+	view_count		int,
+	report_kind		varchar2(30),
+	star			int,
+constraint pk_bookreport_bookreport_no PRIMARY KEY (bookreport_no),
+constraint fk_bookreport_user_email foreign key (user_email) references customer_info(user_email),
+constraint fk_bookreport_product_no foreign key (product_no) references product_list(product_no)
+);
+
+CREATE SEQUENCE bookreport_seq;
