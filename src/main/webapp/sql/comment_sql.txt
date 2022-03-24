@@ -1,3 +1,4 @@
+
 -- 댓글 테이블
 
 CREATE TABLE comment (
@@ -6,6 +7,7 @@ CREATE TABLE comment (
 	bookreport_no		int, -- 댓글이 달린 게시글 번호
 	comment_write_date	date, -- 작성일
 	comment_content		varchar2(800), -- 댓글 내용
+
 constraint pk_comment_comment_no PRIMARY KEY (comment_no),
 constraint fk_comment_user_email foreign key (user_email) references customer_info(user_email),
 constraint fk_comment_bookreport_no foreign key (bookreport_no) references bookreport(bookreport_no)

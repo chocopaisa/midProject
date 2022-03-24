@@ -1,5 +1,5 @@
--- 고객정보 테이블
 
+-- 고객정보 테이블
 create table customer_info (
     user_email varchar2(50) Primary Key, -- 고객 아이디
     user_pass varchar2(50), -- 고객 비밀번호
@@ -9,4 +9,5 @@ create table customer_info (
     user_Birth date, -- 생년월일
     user_Tel VARCHAR2(13), -- 전화번호
     blackList char(1) -- 블랙리스트 여부
+
 );

@@ -1,3 +1,4 @@
+
 -- 게시글 테이블
 
 CREATE TABLE bookreport (
@@ -10,10 +11,13 @@ CREATE TABLE bookreport (
 	view_count		int, -- 조회수
 	report_kind		varchar2(30), -- 게시판 구분
 	star			int, -- 평점
+
 constraint pk_bookreport_bookreport_no PRIMARY KEY (bookreport_no),
 constraint fk_bookreport_user_email foreign key (user_email) references customer_info(user_email),
 constraint fk_bookreport_product_no foreign key (product_no) references product_list(product_no)
 );
 
+
 -- 게시글 테이블 시퀀스
+
 CREATE SEQUENCE bookreport_seq;

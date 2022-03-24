@@ -1,3 +1,4 @@
+
 -- 게시글 신고 테이블
 
 CREATE TABLE REPORT_ARTICLE (
@@ -12,6 +13,7 @@ REFERENCES bookreport(bookreport_no),
 CONSTRAINT fk_REPORT_ARTICLE_REP_ARTICLE_EMAIL FOREIGN KEY (REP_ARTICLE_EMAIL)
 REFERENCES customer_info(user_email)
 );
+
 
 -- 게시글 신고 테이블 시퀀스
 CREATE SEQUENCE REPORT_ARTICLE_seq;
