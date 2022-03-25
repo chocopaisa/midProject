@@ -9,5 +9,5 @@ create table customer_info (
     user_Birth date, -- 생년월일
     user_Tel VARCHAR2(13), -- 전화번호
     blackList char(1) -- 블랙리스트 여부
-
+    user_regdate date -- 회원 가입 날짜
 );
