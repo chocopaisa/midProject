@@ -1,7 +1,7 @@
 
 -- 댓글 테이블
 
-CREATE TABLE comment (
+CREATE TABLE comment_list (
 	comment_no		INT, -- 댓글 번호
 	user_email		varchar2(50), -- 작성자
 	bookreport_no		int, -- 댓글이 달린 게시글 번호
@@ -14,4 +14,4 @@ constraint fk_comment_bookreport_no foreign key (bookreport_no) references bookr
 );
 
 -- 댓글 테이블 시퀀스
-CREATE SEQUENCE comment_seq;
+CREATE SEQUENCE comment_list_seq;
