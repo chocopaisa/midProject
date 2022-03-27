@@ -1,3 +1,6 @@
+
+-- 댓글 신고 테이블
+
 CREATE TABLE REPORT_COMMENT (
 REP_COMMENT_NO INT PRIMARY KEY,      --신고번호
 REP_COMMENT_INFO VARCHAR2(50),          --신고정보
@@ -15,4 +18,5 @@ REFERENCES comment(comment_no)
 );
 
 
+-- 댓글 신고 시퀀스
 CREATE SEQUENCE REPORT_REVIEW_seq;
