@@ -4,7 +4,7 @@ CREATE TABLE product_list(
     product_no char(13), -- 상품번호
     product_name varchar2(60) not null, -- 상품명
     product_price int default 0, -- 상품 가격
-    product_desc varchar2(1000), -- 상품 설명
+    product_desc varchar2(4000), -- 상품 설명
     product_cnt int default 0, -- 상품 재고
     product_sale int default 0, -- 상품 할인 가격
     genre_no varchar2(30), -- 장르 번호
