@@ -9,6 +9,7 @@ CREATE TABLE ORDER_LIST (
     delivery_Requirements varchar2(50), -- 배송 요구사항
     payment_date date, -- 결제날짜
     delivery_info varchar2(50), -- 배송상황
+	tracking_number varchar2(30), -- 송장 번호
     
     CONSTRAINT pk_order_list PRIMARY KEY(order_no),
     CONSTRAINT fk_order_list_user_email FOREIGN KEY(user_email) REFERENCES customer_info(user_email)
