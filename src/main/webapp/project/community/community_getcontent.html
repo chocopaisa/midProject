@@ -47,14 +47,21 @@
 		padding: 0px 20px;
 	}
 
-	.bookreport_type {
+	.bookreport_type1 {
 		border-style: hidden;
-		height: 300px;
+		height: 400px;
 		margin-left: 100px;
 		border-bottom:  darkgrey;
 		background-color: aliceblue;
 	}
-	.bookreport_type tr:hover {
+	.bookreport_type2 {
+		border-style: hidden;
+		height: 250px;
+		margin-left: 100px;
+		border-bottom:  darkgrey;
+		background-color: aliceblue;
+	}
+	.bookreport_type1 tr:hover, .bookreport_type2 tr:hover{
 		background-color: bisque;
 	}
 	
@@ -108,17 +115,19 @@
 	#get_reportContent {
 		min-height: 400px;
 		width: 100%;
-		background-color: grey;
+		background-color: #D1C6BA;
 	}
 	#getcontent {
 		padding: 30px;
-		background-color: mediumseagreen;
+		background-color: #AA9281;
 	}
 	.post-comments {
-		background-color: grey;
+		background-color: #D1C6BA;
 	}
 	.media {
-		background-color: beige;
+		background-color: #D1C6BA;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.btn-book {
   
@@ -144,11 +153,9 @@
 	background-color: black;
 }
 #comment_textarea {
-	max-width: 100%;
-	min-width: 100%;
-	min-height: 150px;
-	max-height: 150px;
-
+	width: 95%;
+	height: 150px;
+	margin-left: 20px;
 }
 
 </style>
@@ -244,7 +251,7 @@
 		<div class="row justify-content-around" >
       		<div class="col-md-4">
 		        <div class="post text-center" >
-		          <table border="1" width="165px" class="bookreport_type">
+		          <table border="1" width="165px" class="bookreport_type1">
 					<tr>
 						<td class="bookreport_type_main"><strong>전체 독후감</strong></td>
 					</tr>
@@ -277,7 +284,7 @@
 					</tr>
 		          </table>
 				  <br/>
-				  <table border="1" width="165px" class="bookreport_type">
+				  <table border="1" width="165px" class="bookreport_type2">
 					<tr>
 						<td class=""><strong>해외</strong></td>
 					</tr>
